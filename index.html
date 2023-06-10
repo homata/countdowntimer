@@ -9,10 +9,10 @@
   <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
   <style>
     #app {
-      background:#0ba29a
+      background:#fff
     }
     #tools {
-      background:#0ba29a
+      background:#fff
     }
     h1 {
       color:#003049;
@@ -42,10 +42,10 @@
     <v-main>
       <v-container>
         <v-toolbar flat id="tools" justify="center" >
-          <img class="pc" src="logo.png" alt="パソコン用の画像">
-          <img class="sp" src="sp_logo.png" alt="スマートフォン用の画像">
+          <img class="pc" src="open_kawasaki.jpg" width=100px alt="パソコン用の画像">
+          <img class="sp" src="open_kawasaki.jpg" width=100px alt="スマートフォン用の画像">
           <!--
-          <v-img max-height="90" max-width="280" src="logo.png"></v-img>
+          <v-img max-height="90" max-width="280" src="open_kawasaki.jpg"></v-img>
           -->
           <v-row justify="center" align-contents="center">
             <v-btn-toggle
@@ -54,13 +54,13 @@
             group
           >
             <v-btn v-bind:disabled="isStart" @click="doPlay" large>
-              <v-icon color="white" x-large>mdi-play</v-icon>
+              <v-icon color="black" x-large>mdi-play</v-icon>
             </v-btn>
             <v-btn v-bind:disabled="isStop" @click="doStop" large>
-              <v-icon color="white" x-large>mdi-stop</v-icon>
+              <v-icon color="black" x-large>mdi-stop</v-icon>
             </v-btn>
             <v-btn @click="doRestart" large>
-              <v-icon color="white" x-large>mdi-restart</v-icon>
+              <v-icon color="black" x-large>mdi-restart</v-icon>
             </v-btn>
           </v-btn-toggle>
           <v-text-field v-bind:disabled="isStart"
@@ -79,14 +79,6 @@
           <h1>{{ message }}</h1>
         </v-row>
         
-        <v-row>
-          <h4>Concept</h4>
-        </v-row>
-        <v-row>
-          <h4>皆さん、こんばんわ、地域の井戸端会議、こすぎレィディオ がお届けします。<br>
-          ナビゲーターは、地域のおとうさん「ひろしくん」と、○○○○「ほっけさん」と、○○○○「わかにゃん」の3人でお届けします
-          </h4>
-        </v-row>
         <v-row>
           <h4>Sound Effect</h4>
         </v-row>
